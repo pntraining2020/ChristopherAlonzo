@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/','EmployeeController@getEmployees')->name('getEmployee');
+Route::post('/logout','EmployeeController@clockOut')->name('logout.employee');
